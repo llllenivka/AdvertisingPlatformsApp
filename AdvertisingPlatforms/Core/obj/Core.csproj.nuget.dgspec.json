@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/Api.csproj": {}
+    "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/Core.csproj": {}
   },
   "projects": {
-    "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/Api.csproj": {
+    "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/Api.csproj",
-        "projectName": "Api",
-        "projectPath": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/Api.csproj",
+        "projectUniqueName": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/Core.csproj",
+        "projectName": "Core",
+        "projectPath": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/Core.csproj",
         "packagesPath": "/Users/adelinaa/.nuget/packages/",
-        "outputPath": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/obj/",
+        "outputPath": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/adelinaa/.nuget/NuGet/NuGet.Config"
@@ -47,14 +47,6 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.3.0, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.2, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[8.1.0, )"
             }
           },
           "imports": [
@@ -69,9 +61,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

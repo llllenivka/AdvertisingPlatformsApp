@@ -1,0 +1,51 @@
+Глобальная реклама:/ru
+Яндекс.Директ:/ru,/ru/msk
+Google Ads:/ru,/ru/msk,/ru/spb
+Реклама в метро:/ru/msk/metro,/ru/spb/metro
+Московские новости:/ru/msk
+Петербургский вестник:/ru/spb
+УралПресс:/ru/ekb,/ru/chel,/ru/perm
+СибирьМедиа:/ru/novosibirsk,/ru/omsk,/ru/tomsk
+Южный регион:/ru/rostov,/ru/krasnodar
+Дальневосточные СМИ:/ru/vladivostok,/ru/khabarovsk
+Транспортные экраны:/ru/msk,/ru/spb,/ru/ekb
+Реклама в ТЦ:/ru/msk,/ru/spb,/ru/novosibirsk
+Лифтовая реклама:/ru/msk,/ru/spb,/ru/ekb
+ТаксиМедиа:/ru/msk,/ru/spb,/ru/kazan
+Авиаборты:/ru/international
+Региональные газеты:/ru/msk/oblast,/ru/spb/oblast
+Малые города:/ru/smolensk,/ru/tver,/ru/ryazan
+Золотое кольцо:/ru/vladimir,/ru/yaroslavl,/ru/suzdal
+Поволжье:/ru/kazan,/ru/samara,/ru/nnovgorod
+Северо-Запад:/ru/murmansk,/ru/arkhangelsk,/ru/petrozavodsk
+Черноземье:/ru/voronezh,/ru/belgorod,/ru/kursk
+БайкалМедиа:/ru/irkutsk,/ru/chita
+Крымские издания:/ru/crimea
+КавказТВ:/ru/dagestan,/ru/chechnya,/ru/ingushetia
+СтройкаМедиа:/ru/msk,/ru/spb,/ru/sochi
+АвтоРеклама:/ru/msk/auto,/ru/spb/auto
+Недвижимость PRO:/ru/msk/realty,/ru/spb/realty
+Детские площадки:/ru/msk/kids,/ru/spb/kids
+Кинотеатры:/ru/msk/cinema,/ru/spb/cinema
+Фитнес-центры:/ru/msk/fitness,/ru/spb/fitness
+Торговые сети:/ru/msk/malls,/ru/spb/malls
+Аэропорты:/ru/msk/airport,/ru/spb/airport
+Вокзалы:/ru/msk/railway,/ru/spb/railway
+Университеты:/ru/msk/universities,/ru/spb/universities
+Больницы:/ru/msk/hospitals,/ru/spb/hospitals
+Отели:/ru/msk/hotels,/ru/spb/hotels
+Кафе и рестораны:/ru/msk/food,/ru/spb/food
+Ночные клубы:/ru/msk/clubs,/ru/spb/clubs
+Музеи:/ru/msk/museums,/ru/spb/museums
+Парки:/ru/msk/parks,/ru/spb/parks
+Стадионы:/ru/msk/stadiums,/ru/spb/stadiums
+Бизнес-центры:/ru/msk/business,/ru/spb/business
+ЖКХ-экран:/ru/msk/housing,/ru/spb/housing
+Таксофоны:/ru/msk/phones,/ru/spb/phones
+Автобусы:/ru/msk/buses,/ru/spb/buses
+Трамваи:/ru/msk/trams,/ru/spb/trams
+Троллейбусы:/ru/msk/trolleys,/ru/spb/trolleys
+Маршрутки:/ru/msk/minibuses,/ru/spb/minibuses
+Электробусы:/ru/msk/electrobuses
+Велостанции:/ru/msk/bikes,/ru/spb/bikes
+Самокаты:/ru/msk/scooters,/ru/spb/scooters

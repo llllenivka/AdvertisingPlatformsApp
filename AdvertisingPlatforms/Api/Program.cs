@@ -18,7 +18,6 @@ public class Program
             app.UseSwaggerUI();
         }
 
-
         app.Run();
     }
 }
