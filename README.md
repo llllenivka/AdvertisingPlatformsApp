@@ -25,7 +25,7 @@ AdvertisingPlatformsApp/
 ### Установка
 ```bash
 git clone https://github.com/llllenivka/AdvertisingPlatformsApp.git
-cd AdvertisingPlatformsApp
+cd AdvertisingPlatformsApp/Api
 dotnet restore
 ```
 
