@@ -23,28 +23,27 @@ public class AdvertisingPlatformsController : ControllerBase
             return BadRequest("No file uploaded");
         }
 
-        // PostData postData = new PostData();
+        string InfoPost = string.Empty;
+        string ErrorPostStrings = string.Empty;
+
         using (var reader = new StreamReader(file.OpenReadStream()))
         {
             string content = await reader.ReadToEndAsync();
             var result = _locationStorage.Add(content);
+            var correctDataCount = result.Where(str => str.Item1 == true).ToArray().Count();
+            InfoPost = $"All: {result.Count}\n" +
+                       $"Correct: {correctDataCount}\n" +
+                       $"Incorrect: {result.Count - correctDataCount}";
             
-            // postData.ErrorPostDataString.AddRange(result
-            // .Where(res => res.Item1 == false)
-            // .Select(res => res.Item2)
-            // .ToList());
-            //
-            // postData.AllPostData = result.Count;
-            // postData.ErrorPostData = postData.ErrorPostDataString.Count;
-            // postData.CorrectPostData = postData.AllPostData - postData.ErrorPostData;
-            //
-            // if (postData.CorrectPostData == 0) 
-            //     return BadRequest(postData);
+            ErrorPostStrings = string.Join('\n', result
+                .Where(str => str.Item1 == false)
+                .Select(c =>c.Item2)
+                .ToArray()
+            );
         }
         
         
-        
-        return Ok();
+        return Ok($"{InfoPost}\n{ErrorPostStrings}");
     }
     
     [HttpGet("locationStorage/{*location}")]
@@ -66,19 +65,19 @@ public class AdvertisingPlatformsController : ControllerBase
         return Ok(_locationStorage.Get());
     }
 
-    private struct PostData
-    {
-        public int AllPostData = 0;
-        public int CorrectPostData = 0;
-        public int ErrorPostData = 0;
-        public List<string> ErrorPostDataString = new List<string>();
-
-        public PostData()
-        {
-            
-        }
-        
-    }
+    // private struct PostData
+    // {
+    //     public int AllPostData = 0;
+    //     public int CorrectPostData = 0;
+    //     public int ErrorPostData = 0;
+    //     public List<string> ErrorPostDataString = new List<string>();
+    //
+    //     public PostData()
+    //     {
+    //         
+    //     }
+    //     
+    // }
     
     
    
