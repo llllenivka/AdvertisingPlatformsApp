@@ -1,6 +1,6 @@
-using Api.Core.Models;
+using Core.Models;
 
-namespace Api.Core.Storage;
+namespace Core.Storage;
 
 public class LocationStorage
 {

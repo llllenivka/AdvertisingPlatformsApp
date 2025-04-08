@@ -293,6 +293,16 @@
             "rid": "browser"
           }
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
       }
     }
   },
@@ -883,10 +893,16 @@
         "system.text.encodings.web.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Core >= 1.0.0",
       "Microsoft.AspNetCore.Http >= 2.3.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.2",
       "Swashbuckle.AspNetCore >= 8.1.0"
@@ -916,7 +932,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/Core.csproj": {
+              "projectPath": "/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Core/Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
