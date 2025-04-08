@@ -1,3 +1,5 @@
+using Api.Core.Storage;
+
 namespace Api;
 
 public class Program
@@ -10,13 +12,18 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         
+        builder.Services.AddSingleton<LocationStorage>();
+        
         var app = builder.Build();
+        
 
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+
+        app.MapControllers();
 
         app.Run();
     }
