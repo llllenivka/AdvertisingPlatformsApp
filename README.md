@@ -25,14 +25,14 @@ AdvertisingPlatformsApp/
 ### Установка
 ```bash
 git clone https://github.com/llllenivka/AdvertisingPlatformsApp.git
-cd AdvertisingPlatformsApp/Api
+cd AdvertisingPlatformsApp/AdvertisingPlatforms/Api
 dotnet restore
 ```
 
 ### Запуск
 
 ```bash
-dotnet run --project AdvertisingPlatformsApp.Api
+dotnet run
 ```
 
 - Сервис будет доступен на: http://localhost:5245
@@ -92,6 +92,8 @@ curl "http://localhost:5245/api/AdvertisingPlatforms/locationStorage/%2Fru"
 ```
 
 ## Тестирование
+
+Перейти в директорию Tests
 
 Запуск тестов:
 ```bash
