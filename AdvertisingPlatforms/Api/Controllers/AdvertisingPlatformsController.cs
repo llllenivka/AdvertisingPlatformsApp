@@ -14,12 +14,37 @@ public class AdvertisingPlatformsController : ControllerBase
     {
         _locationStorage = locationStorage;
     }
-
-    [HttpGet("locationStorage")]
-    public IActionResult Get()
+    
+    [HttpPost]
+    public async Task<IActionResult> UploadFile(IFormFile file)
     {
+        if (file == null || file.Length == 0)
+        {
+            return BadRequest("No file uploaded");
+        }
 
-        return Ok(_locationStorage.Get());
+        // PostData postData = new PostData();
+        using (var reader = new StreamReader(file.OpenReadStream()))
+        {
+            string content = await reader.ReadToEndAsync();
+            var result = _locationStorage.Add(content);
+            
+            // postData.ErrorPostDataString.AddRange(result
+            // .Where(res => res.Item1 == false)
+            // .Select(res => res.Item2)
+            // .ToList());
+            //
+            // postData.AllPostData = result.Count;
+            // postData.ErrorPostData = postData.ErrorPostDataString.Count;
+            // postData.CorrectPostData = postData.AllPostData - postData.ErrorPostData;
+            //
+            // if (postData.CorrectPostData == 0) 
+            //     return BadRequest(postData);
+        }
+        
+        
+        
+        return Ok();
     }
     
     [HttpGet("locationStorage/{*location}")]
@@ -29,26 +54,32 @@ public class AdvertisingPlatformsController : ControllerBase
         var result = _locationStorage.Get(decodedLocation).Item2;
        
         if (result == null) 
-           return BadRequest("Location not found");
+            return BadRequest("Location not found");
        
         return Ok(result);
     }
-    
-    [HttpPost]
-    public async Task<IActionResult> UploadFile(IFormFile file)
+
+    [HttpGet("locationStorage")]
+    public IActionResult Get()
     {
-        if (file == null || file.Length == 0)
+
+        return Ok(_locationStorage.Get());
+    }
+
+    private struct PostData
+    {
+        public int AllPostData = 0;
+        public int CorrectPostData = 0;
+        public int ErrorPostData = 0;
+        public List<string> ErrorPostDataString = new List<string>();
+
+        public PostData()
         {
             
-            return BadRequest("No file uploaded");
         }
         
-        using (var reader = new StreamReader(file.OpenReadStream()))
-        {
-            string content = await reader.ReadToEndAsync();
-            _locationStorage.Add(content);
-           
-        }
-        return Ok();
     }
+    
+    
+   
 }

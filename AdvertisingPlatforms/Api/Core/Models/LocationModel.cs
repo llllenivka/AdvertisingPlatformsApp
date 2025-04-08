@@ -3,14 +3,14 @@ namespace Api.Core.Models;
     public class LocationModel
     {
         public string Location { get; set; }
-        public List<string> Platforms { get; set; }
+        public HashSet<string> Platforms { get; set; }
         public List<string> Parent { get; set; }
 
         public LocationModel(string location, string platform)
         {
             Location = location;
             
-            Platforms = new List<string>();
+            Platforms = new HashSet<string>();
             Platforms.Add(platform);
             
             Parent = FindParents(location);

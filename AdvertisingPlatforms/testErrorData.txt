@@ -1,0 +1,7 @@
+Глобальная реклама:/ru/
+Яндекс.Директ:/ru,/ru   /msk
+Google Ads /ru,/ru/msk,/ru/spb
+Реклама в метро:/ru//msk/metro,/ru/spb/metro
+Московские новости:/r1234u/msk
+Казань:ru/
+Коррестная строка:/ru/kzn
