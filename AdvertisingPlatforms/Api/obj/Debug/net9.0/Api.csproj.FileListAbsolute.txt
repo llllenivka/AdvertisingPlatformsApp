@@ -35,3 +35,5 @@
 /Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/obj/Debug/net9.0/Api.pdb
 /Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/obj/Debug/net9.0/Api.genruntimeconfig.cache
 /Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/obj/Debug/net9.0/ref/Api.dll
+/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/bin/Debug/net9.0/Core.dll
+/Users/adelinaa/Documents/projects/AdvertisingPlatformsApp/AdvertisingPlatforms/Api/bin/Debug/net9.0/Core.pdb
